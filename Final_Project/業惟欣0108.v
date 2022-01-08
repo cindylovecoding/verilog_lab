@@ -350,12 +350,12 @@ module snake(input clk,input reset,input [3:0] keypadCol,output [3:0] keypadRow,
 			            2'd0: //往上
 			                begin 
 				                array_of_snake_y_position[0] <= array_of_snake_y_position[0] - 7'd1;
-				                MAX_Y = array_of_snake_y_position[0];
+				                MIN_Y = array_of_snake_y_position[0];
 			                end
 			            2'd1: //往下
 			                begin
 				                array_of_snake_y_position[0] <= array_of_snake_y_position[0] + 7'd1;
-				                MIN_Y = array_of_snake_y_position[0];
+				                MAX_Y = array_of_snake_y_position[0];
 			                end
 			            2'd2: //往右
 			                begin
